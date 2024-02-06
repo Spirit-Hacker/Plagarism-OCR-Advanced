@@ -1,0 +1,11 @@
+.logoAnimate{
+    animation: animateLogo;
+}
+@keyframes animateLogo {
+    0%{
+        left: 100px;
+    }
+    100%{
+        left: 0
+    }
+}

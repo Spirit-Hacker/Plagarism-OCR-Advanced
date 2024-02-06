@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* .spinner {
+   width: 56px;
+   height: 56px;
+   display: grid;
+   animation: spinner-plncf9 4s infinite;
+}
+
+.spinner::before,
+.spinner::after {
+   content: "";
+   grid-area: 1/1;
+   border: 9px solid;
+   border-radius: 50%;
+   border-color: yellow yellow #0000 #0000;
+   mix-blend-mode: darken;
+   animation: spinner-plncf9 1s infinite linear;
+}
+
+.spinner::after {
+   border-color: #0000 #0000 #dbdcef #dbdcef;
+   animation-direction: reverse;
+}
+
+@keyframes spinner-plncf9 {
+   100% {
+      transform: rotate(1turn);
+   }
+} */
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.spinner {
+  height: 4px;
+  width: 130px;
+  --c:no-repeat linear-gradient(yellow 0 0);
+  background: var(--c),var(--c),#d7b8fc;
+  background-size: 60% 100%;
+  animation: l16 3s infinite;
+}
+@keyframes l16 {
+  0%   {background-position:-150% 0,-150% 0}
+  66%  {background-position: 250% 0,-150% 0}
+  100% {background-position: 250% 0, 250% 0}
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+   width: 3px;
+   right: 0;
+ }
+ 
+ *::-webkit-scrollbar-track {
+   background: #000814;
+ }
+ 
+ *::-webkit-scrollbar-thumb {
+   background-color: #afb2bf;
+   border-radius: 10px;
+   visibility: hidden;
+ }
+ 
+ *:active::-webkit-scrollbar-thumb,
+ *:focus::-webkit-scrollbar-thumb,
+ *:hover::-webkit-scrollbar-thumb {
+   visibility: visible;
+ }
